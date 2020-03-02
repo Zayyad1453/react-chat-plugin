@@ -36,11 +36,11 @@ export default function MessageBox(props) {
                     src={author.avatarUrl ? author.avatarUrl : avatar}
                     className={`react-chat-avatar ${left ? 'react-chat-avatarLeft' : 'react-chat-avatarRight'}`}
                 />
-                <div className={`react-chat-message ${left ? 'react-chat-messageLeft' : 'react-chat-messageRight'}`}>
+                <div className={`react-chat-message p-3 ${left ? 'react-chat-messageLeft react-chat-leftBubble' : 'react-chat-messageRight react-chat-rightBubble'}`}>
                     <div className="react-chat-additional">
                         { author.username }
                     </div>
-                    <div className={`react-chat-bubble ${left ? 'react-chat-leftBubble' : 'react-chat-rightBubble'} ${hasError ? 'react-chat-bubbleWithError' : ''}`}>
+                    <div className={`react-chat-bubble ${left ? 'react-chat-leftBubble-cancelled' : 'react-chat-rightBubble-cancelled'} ${hasError ? 'react-chat-bubbleWithError' : ''}`}>
                         {type === 'indicator' &&
                             <div className="react-chat-typing-indicator">
                               <span></span>
