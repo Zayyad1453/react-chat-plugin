@@ -39,7 +39,7 @@ export default function InputBox(props) {
         props.onSendMessage(message);
         setInputText('');
     }
-    const inputPlaceholder = <span>"Type your message...<br/><span className="small">Press shift + enter to send"</span></span>
+    const inputPlaceholder = () => {  return (<span>"Type your message...<br/><span className="small">Press shift + enter to send"</span></span>) }
     return (
         <div className={`react-chat-inputBox ${props.disabled ? 'disabled' : ''}`}>
             <TextareaAutosize
