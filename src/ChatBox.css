@@ -203,6 +203,7 @@
 
 .react-chat-inputBox {
     /*border-color: inherit;*/
+    margin-top: 5px;
     color: #212529;
     background-color: #fff;
     /* padding: 10px 16px; */
