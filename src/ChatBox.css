@@ -203,7 +203,7 @@
     /*border-color: inherit;*/
     color: #212529;
     background-color: #fff;
-    padding: 10px 16px;
+    /* padding: 10px 16px; */
 /*    border-width: 1px 0 0;
     border-style: solid;*/
     flex: 0 0 auto;
@@ -216,6 +216,7 @@
     text-transform: uppercase;
     font-weight: bold;
     padding: 0 5px;
+    color: #FFF;
 }
 
 .react-chat-textarea, .react-chat-sendButton {
@@ -226,7 +227,7 @@
 .react-chat-sendButton {
     max-height: 35px;
     bottom: 0;
-    background-color: #51965E;
+    background-color: #51965E !important;
 }
 
 .disabled {
@@ -277,6 +278,9 @@
     outline: none;
     -webkit-appearance: none;
     position: relative;
+}
+.react-chat-SendIcon{
+    fill: rgba(255,255,255,1);
 }
 
 .react-chat-SendIcon:hover {
