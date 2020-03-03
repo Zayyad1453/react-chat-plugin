@@ -17,7 +17,7 @@ export default function InputBox(props) {
 
     const handleOnClick = (e) => {
         let str = strip(inputText);
-        if(str.length) {
+        if (str.length) {
             sendMessage(str);
         } else {
             // to do cannot send empty message
@@ -25,9 +25,10 @@ export default function InputBox(props) {
     }
 
     const onKeyPress = (e) => {
-        if(e.shiftKey && e.charCode === 13) {
+        // if(e.shiftKey && e.charCode === 13) {
+        if (e.charCode === 13) {
             let str = strip(inputText);
-            if(str.length) {
+            if (str.length) {
                 sendMessage(str);
             }
             e.preventDefault();
@@ -39,13 +40,13 @@ export default function InputBox(props) {
         props.onSendMessage(message);
         setInputText('');
     }
-    const inputPlaceholder = () => {  return (<span>"Type your message...<br/><span className="small">Press shift + enter to send"</span></span>) }
+    // const inputPlaceholder = () => { return (<span>"Type your message...<br /><span className="small">Press shift + enter to send"</span></span>) }
     return (
         <div className={`react-chat-inputBox ${props.disabled ? 'disabled' : ''}`}>
             <TextareaAutosize
                 maxRows={3}
                 className="react-chat-textarea"
-                placeholder={props.disabled ? props.disabledInputPlaceholder : props.placeholder ? props.placeholder : inputPlaceholder()}
+                placeholder={props.disabled ? props.disabledInputPlaceholder : props.placeholder ? props.placeholder : "Type a message..."}
                 value={inputText}
                 onChange={handleOnChange}
                 onKeyPress={onKeyPress}
