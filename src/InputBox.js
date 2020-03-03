@@ -45,7 +45,7 @@ export default function InputBox(props) {
             <TextareaAutosize
                 maxRows={3}
                 className="react-chat-textarea"
-                placeholder={props.disabled ? props.disabledInputPlaceholder : props.placeholder ? props.placeholder : inputPlaceholder}
+                placeholder={props.disabled ? props.disabledInputPlaceholder : props.placeholder ? props.placeholder : inputPlaceholder()}
                 value={inputText}
                 onChange={handleOnChange}
                 onKeyPress={onKeyPress}
