@@ -110,7 +110,7 @@
 
 .react-chat-message-buttonGroupRight a {
     text-align: center;
-    color: #007bff;
+    color: rgba(93, 120, 255, 0.1) ;
 }
 
 .react-chat-message-button {
@@ -163,17 +163,17 @@
 
 .react-chat-leftBubble {
     border-bottom-left-radius: 2px;
-    border-color: #e4e7eb;
+    border-color: rgba(29, 201, 183, 0.1);
     color: #212529;
-    background-color: #e4e7eb;
+    background-color: rgba(29, 201, 183, 0.1);
     float: left;
 }
 
 .react-chat-rightBubble {
     border-bottom-right-radius: 2px;
-    border-color: #007bff;
+    border-color: rgba(93, 120, 255, 0.1) ;
     color: #fff;
-    background-color: #007bff;
+    background-color: rgba(93, 120, 255, 0.1) ;
     float: right;
 }
 
@@ -212,9 +212,26 @@
     flex-wrap: nowrap;
 }
 
+.react-chat-sendText {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.react-chat-textarea, .react-chat-sendButton {
+    padding: 5px 16px;
+    min-width: 45px;
+}
+
+.react-chat-sendButton {
+    max-height: 35px;
+    bottom: 0;
+    background-color: #51965E;
+}
+
 .disabled {
     opacity: 0.3;
-    background-color: #e4e7eb
+    background-color: rgba(29, 201, 183, 0.1)
 }
 
 .react-chat-textarea {
@@ -263,12 +280,13 @@
 }
 
 .react-chat-SendIcon:hover {
-    fill: #007bff;
+    /* fill: rgba(93, 120, 255, 0.1) ; */
+    fill: rgba(255,255,255,1);
 }
 
 .react-chat-SendIcon-disable {
-    fill: #212529;
-    cursor: auto;
+    fill: orange;
+    cursor: not-allowed;
 }
 
 .react-chat-additional {
@@ -302,7 +320,7 @@
 }
 
 .react-chat-typing-indicator {
-      background-color: #e4e7eb;
+      background-color: rgba(29, 201, 183, 0.1);
       width: auto;
       border-radius: 50px;
       /*padding: 20px;*/

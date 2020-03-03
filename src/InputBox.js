@@ -53,7 +53,7 @@ export default function InputBox(props) {
                 disabled={props.disabled}
             />
             <button className="react-chat-sendButton" onClick={handleOnClick} disabled={props.disabled}>
-                <SendIcon className={props.disabled ? "react-chat-SendIcon-disable" : "react-chat-SendIcon"} />
+                <span className="react-chat-sendText"> SEND </span><SendIcon className={props.disabled ? "react-chat-SendIcon-disable" : "react-chat-SendIcon"} />
             </button>
         </div>
     );
