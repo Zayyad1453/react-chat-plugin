@@ -220,13 +220,12 @@
 }
 
 .react-chat-textarea, .react-chat-sendButton {
-    padding: 5px 16px;
-    min-width: 45px;
+    padding: 5px 16px !important;
+    min-width: 45px !important;
 }
 
 .react-chat-sendButton {
-    max-height: 35px;
-    bottom: 0;
+    max-height: 35px !important;
     background-color: #51965E !important;
 }
 
@@ -253,13 +252,13 @@
 }
 
 .react-chat-sendButton {
-    padding: 0;
+    /* padding: 0; */
     border-color: transparent !important;
-    color: inherit;
-    background: none !important;
+    /* color: inherit; */
+    /* background: none !important; */
     box-shadow: none !important;
     transition: color .2s ease-in-out;
-    border-radius: .25rem;
+    /* border-radius: .25rem; */
     box-sizing: border-box;
     border-width: 1px;
     border-style: solid;
